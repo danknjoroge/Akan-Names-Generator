@@ -1,12 +1,19 @@
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.home{
-    height: 100vh;
-}
+
 h1{
     font-weight: bold;
+    color: rgb(254,80,0);
+    text-align: center;
+    padding-top: 100px;
 }
 table, th, td {
     border:1px solid black;
-  }
+}
+.row{
+    justify-content: space-evenly;
+}
+.sp{
+    color: white;
+}
