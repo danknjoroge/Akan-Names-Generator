@@ -5,7 +5,10 @@ body{
     background-image: url('images/image.png');
     background-size: cover;
 }
-
+.home>p{
+    text-align: center;
+    font-size: 25px;
+}
 h1{
     font-weight: bold;
     color: rgb(254,80,0);
@@ -29,4 +32,7 @@ table, th, td {
 }
 .sp{
     color: white;
+}
+.spa{
+    color:rgb(254,80,0) ;
 }
