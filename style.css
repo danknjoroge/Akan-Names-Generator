@@ -1,4 +1,9 @@
-
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 .home{
     height: 100vh;
+}
+h1{
+    font-weight: bold;
 }
