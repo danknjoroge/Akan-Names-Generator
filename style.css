@@ -36,3 +36,19 @@ table, th, td {
 .spa{
     color:rgb(254,80,0) ;
 }
+form{
+    width: 550px;
+    background-color:rgb(254,80,0);
+    margin-left: 300px;
+    border-radius:10px;
+    
+}
+input[type="number"]{
+    width: 400px;
+    position: center;
+}
+@media (min-width:498px) {
+    input[type="number"]{
+        width: 70%;
+    }
+}
