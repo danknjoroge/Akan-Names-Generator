@@ -13,10 +13,9 @@ function validateForm() {
       return true ;
     } 
 }
-
-var femaleNames = ["Ama", "Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua"];
-var maleNames = ["Kwame", "Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi"];
 var exactDay = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+var maleNames = ["Kwasi", "Kwadwo", "Kwabena", "kwaku", "Yaw", "Kofi", "Kwame"];
+var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
 var myAkanForm= document.getElementById("myForm");
 myAkanForm.addEventListener("submit",(e) =>{
@@ -36,37 +35,38 @@ myAkanForm.addEventListener("submit",(e) =>{
     MM = birthMonth;
     DD = birthDay;
 
-    dayOfTheWeek = (((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD) % 7;
-    dayOfTheWeek= parseInt(dayOfTheWeek);
+    weeksDay = (((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD) % 7;
+    weeksDay= parseInt(weeksDay);
 
-    if (dayOfTheWeek == 0 && gender == "male") {
+    if (weeksDay == 0 && gender == "male") {
         alert("You were born on" + " "+ exactDay[0] + " and your Akan name is"+ " "+ maleNames[0]);
-    } else if (dayOfTheWeek == 1 && gender == "male") {
+    } else if (weeksDay == 1 && gender == "male") {
         alert("You were born on" + " "+ exactDay[1] + " and your Akan name is"+ " "+ maleNames[1]);
-    } else if (dayOfTheWeek == 2 && gender == "male") {
+    } else if (weeksDay == 2 && gender == "male") {
         alert("You were born on" + " "+ exactDay[2] + " and your Akan name is"+ " "+ maleNames[2]);
-    } else if (dayOfTheWeek == 3 && gender == "male") {
+    } else if (weeksDay == 3 && gender == "male") {
         alert("You were born on" + " "+ exactDay[3] + " and your Akan name is"+ " "+ maleNames[3]);
-    } else if (dayOfTheWeek == 4 && gender == "male") {
+    } else if (weeksDay == 4 && gender == "male") {
         alert("You were born on" + " "+ exactDay[4] + " and your Akan name is"+ " "+ maleNames[4]);
-    } else if (dayOfTheWeek == 5 && gender == "male") {
+    } else if (weeksDay == 5 && gender == "male") {
         alert("You were born on" + " "+ exactDay[5] + " and your Akan name is"+ " "+ maleNames[5]);
-    } else if (dayOfTheWeek == 6 && gender == "male") {
+    } else if (weeksDay == 6 && gender == "male") {
         alert("You were born on" + " "+ exactDay[6] + " and your Akan name is"+ " "+ maleNames[6]);
-    } else if (dayOfTheWeek == 0 && gender == "female") {
+    } else if (weeksDay == 0 && gender == "female") {
         alert("You were born on" + " "+ exactDay[0] + " and your Akan name is"+ " "+ femaleNames[0]);
-    } else if (dayOfTheWeek == 1 && gender == "female") {
+    } else if (weeksDay == 1 && gender == "female") {
         alert("You were born on" + " "+ exactDay[1] + " and your Akan name is"+ " "+ femaleNames[1]);
-    } else if (dayOfTheWeek == 2 && gender == "female") {
+    } else if (weeksDay == 2 && gender == "female") {
         alert("You were born on" + " "+ exactDay[2] + " and your Akan name is"+ " "+ femaleNames[2]);
-    } else if (dayOfTheWeek == 3 && gender == "female") {
+    } else if (weeksDay == 3 && gender == "female") {
         alert("You were born on" + " "+ exactDay[3] + " and your Akan name is"+ " "+ femaleNames[3]);
-    } else if (dayOfTheWeek == 4 && gender == "female") {
+    } else if (weeksDay == 4 && gender == "female") {
         alert("You were born on" + " "+ exactDay[4] + " and your Akan name is"+ " "+ femaleNames[4]);
-    } else if (dayOfTheWeek == 5 && gender == "female") {
+    } else if (weeksDay == 5 && gender == "female") {
         alert("You were born on" + " "+ exactDay[5] + " and your Akan name is"+ " "+ femaleNames[5]);
-    } else if (dayOfTheWeek == 6 && gender == "female") {
+    } else if (weeksDay == 6 && gender == "female") {
         alert("You were born on" + " "+ exactDay[6] + " and your Akan name is"+ " "+ femaleNames[6]);
     }
+    document.getElementById("myForm").reset();
 
 });
