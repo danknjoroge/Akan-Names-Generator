@@ -12,7 +12,7 @@ This is web  page that provides the user with the meaning of akan names, where t
 * Open the project using your preferred code editor, prefferably Visual Studio code.
 * Open the project using a web browser of your choice, preferably Google Chrome or if you have installed Liveserver in Visual Studio code, you can go live from there.
 ## Live link
-     
+     https://danknjoroge.github.io/Akan-Names-Generator/
 ## Known Bugs
 There are no known bugs as per the time of publication. 
 ## Technologies Used
