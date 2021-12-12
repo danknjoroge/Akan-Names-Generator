@@ -1,6 +1,4 @@
-
 function validateForm() {
-  
     if( document.myForm.date.value == "") {
        alert( "Please provide your day, month and year of birth." );
        document.myForm.date.focus() ;
