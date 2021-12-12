@@ -76,25 +76,16 @@
             </div>
         </div>
         
-        <form name="myForm" action="" class="col-md-6 p-5 bg-dar container" onsubmit="validateForm()">
+        <form id="myForm" name="myForm" action="" class="col-md-6 p-5 bg-dar container" onsubmit="validateForm()">
             <h3>Input the information to generate akan name</h3>
-            <label for="day"> Day of birth:</label>
-            <input type="number" class="form-control input" id="day" name="day"> 
-
-            <label for="month"> Month of Birth:</label>
-            <input type="number" class="form-control input" id="month" name="month"> 
-
-            <label for="year"> Year of Birth:</label>
-            <input type="number" class="form-control input" id="year" name="year"> 
-
-            <div>
-                <label for="month"> Select Gender:</label><br>
-                <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="gender" id="male">
-                Male </label>    <br>         
-                <label class="form-check-label"> 
-                <input type="radio" class="form-check-input" name="gender" id="female"> 
-                Female </label>
+            <label for="date"> Day of birth:</label>
+            <input type="date" class="form-control input" id="date" name="date"> 
+            <div class="selectbox">
+                <select id="gender">
+                  <option value="">Select Gender</option>
+                  <option value="female">Female</option>
+                  <option value="male">Male</option>
+                </select>
             </div>
             <button type="submit" class="btn btn-primary" id="btn">Generate Name</button>
         </form>
